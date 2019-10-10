@@ -15,4 +15,15 @@ export function countReducer(state = initialCount, action) {
     default:
       return state;
   }
-}
+};
+
+const initialData = {};
+export function nasaAPI(state = initialData, action) {
+    switch(action.type) {
+        case types.NASAPOD:
+            return action.payload
+        default:
+            return state;
+    }
+};
+
