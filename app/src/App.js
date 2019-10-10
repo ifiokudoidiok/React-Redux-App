@@ -4,7 +4,7 @@ import React from 'react';
 
 
 import Counter from './components/Counter';
-import Title from './components/Title';
+import NasaPod from './components/NasaPod';
 import styled from 'styled-components';
 
 import './App.css';
@@ -27,7 +27,7 @@ function App() {
     <Body>
       {/* <h1>NASA PHOTO OF THE DAY</h1>
       <Counter/> */}
-      <Title />
+      <NasaPod />
       
     </Body>
   );
