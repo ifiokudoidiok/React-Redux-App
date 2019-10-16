@@ -1,13 +1,8 @@
-import React from 'react';
+import React from "react";
+import NasaPod from "./components/NasaPod";
+import styled from "styled-components";
 
-
-
-
-import Counter from './components/Counter';
-import NasaPod from './components/NasaPod';
-import styled from 'styled-components';
-
-import './App.css';
+import "./App.css";
 
 const Body = styled.div`
   margin: 0;
@@ -18,21 +13,12 @@ const Body = styled.div`
   -moz-osx-font-smoothing: grayscale;
 `;
 
-
-
-
-
 function App() {
   return (
     <Body>
-      {/* <h1>NASA PHOTO OF THE DAY</h1>
-      <Counter/> */}
       <NasaPod />
-      
     </Body>
   );
 }
-
-
 
 export default App;

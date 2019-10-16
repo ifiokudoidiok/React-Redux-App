@@ -95,12 +95,12 @@ export function NasaPod({ getNasaAPI, title, date, url, explanation }) {
   console.log(title);
   useEffect(() => {
     getNasaAPI();
-  }, []);
+  }, [getNasaAPI]);
   return (
     <AppStyled>
       <h1>Today's Photo and Its Story</h1>
       <figure>
-        <img src={url} alt="image" />
+        <img src={url} alt="" />
       </figure>
       <MiniContainer>
         <StyledTitle>
